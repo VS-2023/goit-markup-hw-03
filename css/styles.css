@@ -37,9 +37,9 @@ body {
 
 /* HEADER */
 .header {
-  background-color: var(--white-color);
   padding-top: 24px;
   padding-bottom: 24px;
+  margin-bottom: 0;
 }
 .heder-border {
   border: 1px solid #e7e9fc;
@@ -61,7 +61,6 @@ body {
 .page-nav {
   display: flex;
   align-items: center;
-  margin-right: 332px;
 }
 
 .logo-web {
@@ -119,7 +118,6 @@ body {
   align-items: center;
 }
 .menu-mail {
-  display: flex;
   align-items: center;
 }
 .menu-mail:not(:last-child) {
@@ -137,23 +135,26 @@ body {
   color: var(--button-color);
 }
 /* HERO IMAGE */
+.main {
+  margin-bottom: 0px;
+  background-color: aqua;
+}
 .hero {
   text-align: center;
   background-color: var(--brend-color);
+  outline: 2px solid red;
 }
 .pege-hero {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-color);
-  margin-bottom: 48px;
-  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 188px;
-  padding-bottom: 48px;
+  max-width: 496px;
+  outline: 2px solid teal;
+  margin-bottom: 48px;
 }
 .button-hero {
   font-family: inherit;
@@ -169,9 +170,8 @@ body {
   display: inline-block;
   min-width: 169px;
   border: 1px solid transparent;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 188px;
+  outline: 2px solid gold;
+  margin-bottom: 0;
 }
 .button-hero:hover,
 .button-hero:focus {
@@ -181,6 +181,7 @@ body {
 /* SECTION 1 */
 .sectin {
   background-color: var(--white-color);
+  outline: 2px solid red;
 }
 
 .title {
@@ -194,19 +195,22 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+  outline: 2px solid teal;
 }
 
-.section-container {
-  display: flex;
+.strategy {
   width: calc((100% -3 * 24px) / 4);
+  outline: 2px solid gold;
 }
-.section-container:not(:last-child) {
+.strategy:not(:last-child) {
   margin-right: 24px;
 }
 .section-descript {
   display: flex;
   padding-top: 120px;
-  padding-bottom: 120px;
+  margin-bottom: 120px;
+  box-sizing: border-box;
+  outline: 2px solid green;
 }
 .name-strategy {
   font-weight: 500;
@@ -215,6 +219,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--brend-color);
   margin-bottom: 8px;
+  outline: 2px solid royalblue;
 }
 .text-strategy {
   font-size: 16px;
@@ -235,8 +240,6 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: var(--brend-color);
-  min-width: 323px;
-  padding: 0 417px;
   margin-bottom: 72px;
 }
 .work-imeges {
@@ -249,10 +252,10 @@ body {
   display: flex;
   justify-content: center;
 }
-.work-container {
-  max-width: calc((100% - 2 * 24px) / 3);
+.work-imeges {
+  width: calc((100% - 2 * 24px) / 3);
 }
-.work-container:not(:last-child) {
+.work-imeges:not(:last-child) {
   margin-right: 24px;
 }
 
@@ -277,15 +280,17 @@ body {
 
 .section-team {
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 120px;
 }
 
-.container-img {
-  width: calc((100% - 3 * 24px) / 4);
+.team-img {
+  background: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  border-top-style: none;
+  margin-bottom: 32px;
+  max-width: calc((100% - 3 * 24px) / 4);
 }
 .team-img:not(:last-child) {
-  margin-right: 12px;
+  margin-right: 24px;
 }
 .team-mark {
   font-weight: 500;
@@ -293,12 +298,13 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--brend-color);
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .team-designer {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
 }
 .team-content {
   padding: 32px 0;
@@ -310,21 +316,27 @@ body {
   background-color: var(--brend-color);
 }
 .footer-content {
-  width: 1158px;
-  margin-left: 55px;
+  max-width: 264px;
+  padding-top: 100px;
 }
+.footer-logo {
+  margin-bottom: 16px;
+}
+
 .text-footer {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--paragraph-color);
+  padding-bottom: 100px;
 }
 
 /* PORTFOLIO BATTON */
 .portfolio-batton {
   display: flex;
   justify-content: center;
-  margin-top: 96px;
+  padding-top: ;
+  :96px ;
   margin-bottom: 72px;
 }
 .batton-portfolio {
@@ -357,7 +369,6 @@ body {
   margin-left: var(--portfolio-img-gap);
   margin-top: 48px;
   border: 1px solid #e7e9fc;
-  border-top: none;
 }
 
 .portfolio-img {
@@ -401,7 +412,6 @@ body {
 }
 .footer-content {
   max-width: 264px;
-  padding: 100px 1020px 100px 156px;
 }
 .text-footer {
   padding-top: 16px;
