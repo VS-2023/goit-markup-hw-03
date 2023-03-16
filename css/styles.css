@@ -336,7 +336,6 @@ body {
 .batton-list:not(:last-child) {
   margin-right: 24px;
 }
-
 .batton-portfolio {
   font-family: inherit;
   font-weight: 500;
